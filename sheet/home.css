@@ -1,0 +1,69 @@
+#overlayTitle{
+	position: absolute;
+	top: 20%;
+	left: 61%;
+	width: 39%;
+}
+#overlayTitle h3{
+	text-decoration: none;
+	color: rgb(50,50,50);
+	transition: ease 300ms;
+	font-family: 'Lato',sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 0.8vw;
+	letter-spacing: 12px;
+}
+#overlayTitle a, #overlayTitle a:hover,#overlayTitle a:visited,#overlayTitle a:active{
+	font-size: 1vw;
+	padding: 12px 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+}
+#overlayTitle h3{
+	color: rgb(70,70,70);
+	font-weight: 500;
+	font-size: 2vw;
+	text-align: left;
+}
+#overlayTitle .link{
+	float: left;
+	border: 2px rgb(90,90,90) solid;
+	transition: ease 300ms;
+	letter-spacing: 8px;
+}
+#overlayTitle .white{
+	margin-left: 2%;
+	margin-bottom: 20px;
+	color: white;
+	background: #FF9C00;
+	border-color: #FF9C00;
+}
+#overlayTitle .white a{
+	color:white;
+}
+#overlayTitle .white:hover{
+	background: white;
+	border-color: rgb(90,90,90);
+}
+#overlayTitle .white:hover a{
+	color: rgb(90,90,90);
+}
+
+#overlayTitle .black{
+	background: transparent;
+}
+#overlayTitle .black:hover{
+	background: #FF9C00;
+	border-color: #FF9C00;
+}
+#overlayTitle .black:hover a{
+	color: white;
+}
+#overlayTitle .black a,#overlayTitle .black a:visited{
+	color: rgb(90,90,90);
+}
