@@ -1,14 +1,7 @@
+$.mobile.loading().hide();
 $(document).ready(function() {
 	
-$.ajax({
-	  type: "POST",
-	  url: "sites/zaehler.php",
-	  data: "&width=" + $(window).width(),
-	  success: function(msg){
-		  
-		}
-});
-	
+
 
 //SWIPEBOX
 	
@@ -18,18 +11,50 @@ $.ajax({
 
 // MOBILE MENUE
 	var menu = 0;
+
+	function openMenu(speed){
+		$('#navi ul').animate({left:"25%"},speed);
+			menu = 1;
+	}
+	function closeMenu(speed){
+		$('#navi ul').animate({left:"100%"},speed);
+			menu = 0;
+	}
+
 	$('#menu').click(function(){
 		
-		if(menu === 0){
-			$('#navi').animate({height:"279px"},500);
-			menu = 1;
+		if(menu == 0){
+			openMenu(350);
 		}
 		else{
-			$('#navi').animate({height:"50px"},500);
-			menu = 0;
+			closeMenu(350);
 		}
 	});
+	$('#closemenu').click(function(){
+		
+		if(menu == 0){
+			openMenu(350);
+		}
+		else{
+			closeMenu(350);
+		}
+	});
+    
+    
+
+    $.event.special.swipe.horizontalDistanceThreshold=130;
+
+	$("body").on("swiperight",function(){
+    	closeMenu(250);
+  	});
+
+	$("body").on("swipeleft",function(){
+    	openMenu(250);
+  	});
+
 	
+	
+/*
 	window.onresize=function(){
 		if(window.innerWidth>900){
 			$('#navi').animate({height:"80px"},500);	
@@ -38,6 +63,7 @@ $.ajax({
 			$('#navi').animate({height:"50px"},500);
 		}
 	}
+*/
 	
 // KONTAKT
 

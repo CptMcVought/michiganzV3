@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="template/font-awesome/css/font-awesome.min.css">
 
 <script type="text/javascript" src="sheet/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="sheet/js.js"></script>
+
 <script src="swipe/js/jquery.swipebox.js"></script>
 
 
@@ -34,7 +34,6 @@
             <li class="navlinks"><a href="sites/kontakt.php">KONTAKT</a></li>
         </ul>
     </nav>
-    <div id="logomobile"><img src="template/nav/logo_klein_black.png"></div>
     
     <div id="titlePic">
     <div id="overlayTitle">        
@@ -66,6 +65,13 @@
             <i class="fa fa-phone fa-1x" aria-hidden="true"></i><a href="tel:+41793388014">079 338 80 14</a>
         </span>
     </footer>
-    
+    <script> 
+    $(function(){ jQuery('ul').on("swipe",function(){
+        alert("jo");
+        closeMenu();
+    });
+    });
+    </script>
+    <script type="text/javascript" src="sheet/js.js"></script>
 </body>
 </html>
