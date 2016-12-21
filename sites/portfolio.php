@@ -3,7 +3,9 @@
 
 <head>
 <meta charset="utf-8">
-    
+
+    <title>Michi Ganz - Angebot & Preise</title>
+
     <?php 
         $version="3.0.0";
         $home="../";

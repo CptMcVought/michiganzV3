@@ -1,5 +1,5 @@
 <meta name="viewport" content="width=device-width">
-    <title>Michi Ganz - Fotografie und Grafik</title>
+    
 	<META name="keywords" content="Fotografie, Fotograf, Grafike, Grafiker, Schweiz, Tösstal, Zürich, Kinderfotos, Babyfotos, Bewerbungsfotos, Michi Ganz, Michael Ganz, Michi, Michael, Ganz,">
 	<META name="de-scription" content="Fotograf für allerlei; Hochzeit, Bewerbung, Kinderfotos, Familienfotos, Paarfotos, Flyer für Geburtstagsparty etc.">
 	<META name= "revisit-after" content="2 days">

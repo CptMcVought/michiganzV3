@@ -1,7 +1,10 @@
 @charset "utf-8";
 .angebot{
-	width: 100%;
+	width: 80%;
+	max-width: 900px;
 	min-height: 300px;
+	margin-left: auto;
+	margin-right: auto;
 	overflow: hidden;
 	margin-top: 20px;
 	box-shadow: rgba(0,0,0,0.63) 7px 7px 15px;
@@ -9,9 +12,10 @@
 	-webkit-transition: all 0.7s ease;
 	transition: all 0.7s ease;
 	}
-	.angebot:hover{
-		
-			}
+	.angebot:last-child{
+		margin-bottom: 50px;
+	}
+
 	.angebot img{
 		opacity: 0.5;
 		float: left;
@@ -21,9 +25,14 @@
 	.angebot:hover img{
 		opacity: 1;
 	}
+	h1{
+		margin-left: auto;
+		margin-right: auto;
+	}
 	h2{
-		font-weight: 100;
+		font-weight: 400;
 		font-size: 30px;
+		letter-spacing: 3px;
 	}
 	a{
 		text-decoration: none;
