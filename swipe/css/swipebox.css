@@ -1,4 +1,56 @@
 /*! Swipebox v1.3.0 | Constantin Saguin csag.co | MIT License | github.com/brutaldesign/swipebox */
+/* PORTFOLIO */
+
+.port{
+  flex-basis: 25%;
+  width: 25vw;
+  height: 25vw;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  background-size: cover;
+
+  filter:   brightness(1)  ;
+  -webkit-filter:   brightness(1)  ;
+  -moz-filter:   brightness(1)  ; 
+  -o-filter:   brightness(1)  ; 
+  -ms-filter:   brightness(1)  ; 
+
+  -webkit-filter: grayscale(0.5);
+  filter: grayscale(0.5);
+
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+}
+.port img{
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  width: 100%;
+}
+.port a{
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.port:hover{  
+  filter:   brightness(1.1)  ;
+  -webkit-filter:   brightness(1.1)  ;
+  -moz-filter:   brightness(1.1)  ; 
+  -o-filter:   brightness(1.1)  ; 
+  -ms-filter:   brightness(1.1)  ; 
+}
+.imageContainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgb(30,30,30);
+}
+h1{
+  margin-left: auto;
+  margin-right: auto;
+}
 html.swipebox-html.swipebox-touch {
   overflow: hidden !important;
 }

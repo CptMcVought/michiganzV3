@@ -1,5 +1,5 @@
 <nav id="navi">
-        <div id="logo"><img src="../template/nav/logo_michiganz.png"></div>
+        <div id="logo"><img src="<?php echo $home;?>template/nav/logo_michiganz.png"></div>
         <i id="menu" class="fa fa-bars" aria-hidden="true"></i>
         <ul>
             <li id="closemenu"><img src="<?php echo $home;?>template/nav/closeicon.svg"/></li>

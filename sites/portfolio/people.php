@@ -2,18 +2,16 @@
 <html>
 <head>
 <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
     <title>Michi Ganz - People</title>
-	<META name="keywords" content="Fotografie, Fotograf, Grafike, Grafiker, Schweiz, Tösstal, Zürich, Kinderfotos, Babyfotos, Bewerbungsfotos, Michi Ganz, Michael Ganz, Michi, Michael, Ganz,">
-	<META name="de-scription" content="Fotograf für allerlei; Hochzeit, Bewerbung, Kinderfotos, Familienfotos, Paarfotos, Flyer für Geburtstagsparty etc.">
-	<META name= "revisit-after" content="2 days">
+
+    <?php 
+        $version="3.0.0";
+        $home="../../";
+    ?>
+    
+    <?php include($home.'template/code/head.php');?>
     
 <link rel="stylesheet" href="../../swipe/css/swipebox.css">
-<link rel="stylesheet" href="../../sheet/css.css">
-
-
-<script type="text/javascript" src="../../sheet/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="../../sheet/js.js"></script>
 <script src="../../swipe/js/jquery.swipebox.js"></script>
 <script type="text/javascript" src="../../sheet/swipe.js"></script>
 
@@ -21,14 +19,31 @@
 
 <body>
 
-
-
-	<?php include 'navi.html' ?>
-    
+	<?php include($home.'template/code/navi.php');?> 
     
 	<div class="content">
+
     	
         <h1>People</h1>
+
+        <div class="imageContainer">
+
+        <span class="port" style="background-image: url(pic/people/thumbs/people-1.jpg);"> <a href="pic/people/people-1.jpg" class="swipebox portfolio"></a> </span>
+        <span class="port" style="background-image: url(pic/people/thumbs/people-2.jpg);"> <a href="pic/people/people-2.jpg" class="swipebox portfolio"></a> </span>
+        <span class="port" style="background-image: url(pic/people/thumbs/people-3.jpg);"> <a href="pic/people/people-3.jpg" class="swipebox portfolio"></a> </span>
+        <span class="port" style="background-image: url(pic/people/thumbs/people-4.jpg);"> <a href="pic/people/people-4.jpg" class="swipebox portfolio"></a> </span>
+        <span class="port" style="background-image: url(pic/people/thumbs/people-5.jpg);"> <a href="pic/people/people-5.jpg" class="swipebox portfolio"></a> </span>
+        <span class="port" style="background-image: url(pic/people/thumbs/people-6.jpg);"> <a href="pic/people/people-6.jpg" class="swipebox portfolio"></a> </span>
+        <span class="port" style="background-image: url(pic/people/thumbs/people-7.jpg);"> <a href="pic/people/people-7.jpg" class="swipebox portfolio"></a> </span>
+        <span class="port" style="background-image: url(pic/people/thumbs/people-8.jpg);"> <a href="pic/people/people-8.jpg" class="swipebox portfolio"></a> </span>
+        <span class="port" style="background-image: url(pic/people/thumbs/people-9.jpg);"> <a href="pic/people/people-9.jpg" class="swipebox portfolio"></a> </span>
+        <span class="port" style="background-image: url(pic/people/thumbs/people-10.jpg);"> <a href="pic/people/people-10.jpg" class="swipebox portfolio"></a> </span>
+        <span class="port" style="background-image: url(pic/people/thumbs/people-11.jpg);"> <a href="pic/people/people-11.jpg" class="swipebox portfolio"></a> </span>
+        
+
+
+
+<!--
     
         <span class="port"> <a href="pic/people/people-1.jpg" class="swipebox portfolio"> <img src="pic/people/thumbs/people-1.jpg"> </a> </span>
         <span class="port"> <a href="pic/people/people-2.jpg" class="swipebox portfolio"> <img src="pic/people/thumbs/people-2.jpg"> </a> </span>
@@ -40,7 +55,7 @@
         <span class="port"> <a href="pic/people/people-8.jpg" class="swipebox portfolio"> <img src="pic/people/thumbs/people-8.jpg"> </a> </span>
         <span class="port"> <a href="pic/people/people-9.jpg" class="swipebox portfolio"> <img src="pic/people/thumbs/people-9.jpg"> </a> </span>
         <span class="port"> <a href="pic/people/people-10.jpg" class="swipebox portfolio"> <img src="pic/people/thumbs/people-10.jpg"> </a> </span>
-<!--        <span class="port"> <a href="pic/people/people-11.jpg" class="swipebox portfolio"> <img src="pic/people/thumbs/people-11.jpg"> </a> </span>
+        <span class="port"> <a href="pic/people/people-11.jpg" class="swipebox portfolio"> <img src="pic/people/thumbs/people-11.jpg"> </a> </span>
         <span class="port"> <a href="pic/people/people-12.jpg" class="swipebox portfolio"> <img src="pic/people/thumbs/people-12.jpg"> </a> </span>
         <span class="port"> <a href="pic/people/people-13.jpg" class="swipebox portfolio"> <img src="pic/people/thumbs/people-13.jpg"> </a> </span>
         <span class="port"> <a href="pic/people/people-14.jpg" class="swipebox portfolio"> <img src="pic/people/thumbs/people-14.jpg"> </a> </span>
@@ -69,12 +84,10 @@
         <span class="port"> <a href="pic/people/people-37.jpg" class="swipebox portfolio"> <img src="pic/people/thumbs/people-37.jpg"> </a> </span>
         <span class="port"> <a href="pic/people/people-38.jpg" class="swipebox portfolio"> <img src="pic/people/thumbs/people-38.jpg"> </a> </span>
 -->
-   
+        </div>
        
     </div>
     
-    <footer>
-     webdesign by michiganz 2015
-    </footer>
+    <?php include($home.'template/code/footer.php');?>
 </body>
 </html>

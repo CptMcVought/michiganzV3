@@ -118,6 +118,13 @@ h1{
 	font-size: 45px;
 	color: #434343;
 }
+h3{
+	font-family: robothin;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 26px;
+	color: #434343;
+}
 #titlePic{
 	width: 100%;
 	height: 100vh;
@@ -321,33 +328,7 @@ nav a, nav span {
 }
 */
 
-/* PORTFOLIO */
-.port{
-	width: 300px;
-	height: 200px;
-	position: relative;
-	float: left;
-	overflow: hidden;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	-webkit-transition: all 0.7s ease;
-	transition: all 0.7s ease;
-}
-.port img{
-	-webkit-transition: all 0.7s ease;
-	transition: all 0.7s ease;
-	width: 300px;
-}
-.port:hover{
-	
-	
-	filter:   brightness(0.5)  ;
-	-webkit-filter:   brightness(0.5)  ;
-	-moz-filter:   brightness(0.5)  ; 
-	-o-filter:   brightness(0.5)  ; 
-	-ms-filter:   brightness(0.5)  ; 
-}
+
 
 @media (max-width: 1300px){
 	.wrapper{
