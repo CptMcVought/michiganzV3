@@ -21,6 +21,14 @@ $(document).ready(function() {
 			menu = 0;
 	}
 
+	console.log(4);
+	$('#swipebox-close').click(function(){
+		console.log(5);
+		alert("jo");
+		e.stopPropagation();
+	});
+
+
 	$('#menu').click(function(){
 		
 		if(menu == 0){

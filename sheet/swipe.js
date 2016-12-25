@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+	$('#swipebox-close').click(function(e){
+	alert("jo");
+	e.stopPropagation();
+})
+
 $( '.swipebox' ).swipebox( {
 		useCSS : true, // false will force the use of jQuery for animations
 		useSVG : true, // false to force the use of png for buttons
@@ -12,5 +17,7 @@ $( '.swipebox' ).swipebox( {
 		afterClose: function() {}, // called after closing
 		loopAtEnd: false // true will return to the first image after the last image is reached
 	} );
+
+
 	
 });

@@ -7,21 +7,15 @@
   height: 25vw;
   margin-left: auto;
   margin-right: auto;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
   background-size: cover;
+  background-position: center;
 
-  filter:   brightness(1)  ;
-  -webkit-filter:   brightness(1)  ;
-  -moz-filter:   brightness(1)  ; 
-  -o-filter:   brightness(1)  ; 
-  -ms-filter:   brightness(1)  ; 
 
-  -webkit-filter: grayscale(0.5);
-  filter: grayscale(0.5);
+  -webkit-filter: grayscale(0.5) brightness(0.8);
+  filter: grayscale(0.5) brightness(0.8);
 
-  -webkit-transition: -webkit-transform 0.4s ease;
-  transition: transform 0.4s ease;
+  -webkit-transition: -webkit-all 0.4s;
+  transition: all 0.4s;
 }
 .port img{
   -webkit-transition: all 0.7s ease;
@@ -33,12 +27,9 @@
   height: 100%;
   width: 100%;
 }
-.port:hover{  
-  filter:   brightness(1.1)  ;
-  -webkit-filter:   brightness(1.1)  ;
-  -moz-filter:   brightness(1.1)  ; 
-  -o-filter:   brightness(1.1)  ; 
-  -ms-filter:   brightness(1.1)  ; 
+.port:hover{
+  -webkit-filter: grayscale(0) brightness(1);
+  filter: grayscale(0) brightness(1);
 }
 .imageContainer{
   display: flex;
@@ -47,9 +38,50 @@
   justify-content: space-between;
   background: rgb(30,30,30);
 }
+
+@media (max-width: 1300px) {
+  .port{
+    flex-basis: 33.333%;
+    height: 33.333vw;
+  }
+}
+@media (max-width: 700px) {
+  .port{
+    flex-basis: 50%;
+    height: 50vw;
+    -webkit-filter:unset;
+    filter:unset;
+  }
+}
+/*
+.imageContainer{
+  line-height: 0;
+   
+  -webkit-column-count: 3;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    3;
+  -moz-column-gap:      0px;
+  column-count:         3;
+  column-gap:           0px; 
+}
+.imageContainer img{
+  display: inline;
+  width: 100% !important;
+  height: auto !important;
+}
+*/
 h1{
   margin-left: auto;
   margin-right: auto;
+  font-family: lato;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+  font-size: 29px;
+  border: black solid 2.2pt;
+  padding: 15px 35px;
+  margin-top: 15vh;
+  display: inline-block;
+  background: rgba(255,255,255,0.3);
 }
 html.swipebox-html.swipebox-touch {
   overflow: hidden !important;

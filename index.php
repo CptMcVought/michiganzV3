@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body data-ajax="false">
 
     <?php include($home.'template/code/navi.php');?>  
     
